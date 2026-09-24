@@ -68,6 +68,8 @@ Do not simplify by ignoring reality.
 
 Keep complexity that is warranted by material value, important constraints, meaningful risk reduction, correctness, safety, security, reliability, legal or regulatory obligations, required quality, or important human needs.
 
+Do not assume away unknown constraints. When simplification depends on uncertain facts or domain requirements, surface the uncertainty instead of guessing.
+
 A complex solution can be the right solution.
 
 Do not optimize for the smallest possible solution. Optimize for sufficient and proportionate complexity.
@@ -80,7 +82,7 @@ Distinguish between "this could still be improved" and "this needs to be improve
 
 It is valid to conclude that the current approach is already sufficiently simple, or that only a small part should change.
 
-Stop when further simplification would remove more value than cost.
+Stop when the value lost through further simplification would outweigh the cost of the complexity removed.
 
 ## Respond naturally
 
