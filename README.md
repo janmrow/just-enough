@@ -101,9 +101,9 @@ Sometimes the right answer is to change nothing.
 
 ## Status
 
-Early development — v0.1.
+**v0.1**
 
-The current version is intentionally small and is being tested across different kinds of work and problems.
+The current version is intentionally small and ready for real-world use and feedback.
 
 ## License
 
