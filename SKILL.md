@@ -50,6 +50,8 @@ Compare what the added complexity buys against what it costs. Prefer the simpler
 
 When alternatives provide similar value, prefer the one that is easier to understand, change, reverse, or remove.
 
+Avoid generalizing for merely possible future needs. Address the present case unless evidence or the cost of changing course later justifies a broader approach.
+
 ## Use counterfactual checks
 
 When useful, ask:
