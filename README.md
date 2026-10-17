@@ -1,110 +1,76 @@
 # Just Enough
 
-**Just Enough helps AI cut through unnecessary complexity and keep only what actually earns its place.**
+<p>
+  <img src="assets/hero.png" alt="Just Enough — Find enough in a world of more." width="1280">
+</p>
 
-Sometimes a plan, process, project, or solution starts accumulating structure faster than value. Just Enough gives the model a deliberate moment to step back and ask:
+**An AI skill for deciding which complexity earns its place.**
+Use it with code, plans, processes, and everyday decisions.
 
-> How much of this complexity is actually justified?
+A plan gains another step. A project gains another tool. Soon, keeping the machinery running becomes a job of its own.
 
-It does not aim for the simplest possible answer. It looks for **enough complexity — and no more than the situation earns**.
+Just Enough gives your agent a moment to return to the goal, weigh what the extra structure buys, and find the right amount of complexity. Sometimes that means removing something. Sometimes it means keeping what is already there.
 
-## Why
+## See it work
 
-Telling a model to *“simplify this”* is easy, but ambiguous.
+*Illustrative example.*
 
-Simpler could mean fewer steps, less code, fewer tools, less documentation, lower cost, a shorter process, or merely a shorter answer.
+You're planning a one-off, free workshop for twelve people. The plan has grown to include a booking website, attendee accounts, and automated reminders.
 
-Just Enough gives that request a stable meaning.
-
-It treats complexity as something that can create real value — but also carries costs such as time, attention, coordination, cognitive load, maintenance, risk, and opportunity cost.
-
-The goal is not minimalism.
-
-The goal is **proportionate complexity**.
-
-## When to use it
-
-Use Just Enough when something feels:
-
-* overbuilt;
-* harder to understand than it should be;
-* surrounded by process or machinery;
-* burdened by historical decisions;
-* solving problems created mainly by its own complexity;
-* increasingly difficult to change;
-* optimized beyond what the actual problem seems to require.
-
-It is equally valid for Just Enough to conclude that the existing complexity is justified and should remain.
-
-## Usage
-
-Invoke the `just-enough` skill when you want a simplicity-oriented reality check.
-
-Depending on your host, explicit invocation may look like:
-
-**Codex**
+You ask:
 
 ```text
-$just-enough
+Use just-enough on this plan.
+We need a headcount,
+venue details, and a way
+to contact attendees.
 ```
 
-**OpenCode**
+A proportionate decision might be:
 
-```text
-/just-enough
-```
+| Keep | Set aside for now |
+| --- | --- |
+| A sign-up form, an attendee list, and one reminder | A custom booking website and attendee accounts |
+| The capacity limit, venue access information, and a named contact | An automated reminder service for this one event |
 
-Natural language works too:
+The useful work stays. The extra machinery has to justify itself.
 
-```text
-Use just-enough to review this release process.
-```
-
-```text
-Use just-enough here. I think we may be overcomplicating this.
-```
-
-Just Enough is especially useful mid-session. You are not starting a new analysis; you are asking for a reality check on work already in progress:
-
-```text
-$just-enough
-
-Reassess what we've designed so far.
-```
-
-Just Enough does not impose a special response format. The model should continue responding naturally while looking at the problem through the skill's reasoning lens.
+The same question applies to a release process, a software architecture, a design brief, or a personal project.
 
 ## Install
 
-Just Enough is a single [`SKILL.md`](SKILL.md) with no scripts, tools, or runtime dependencies. Want to see what the model actually gets? Read it.
+With Node.js 22.20 or later and npm available, run:
 
-Install or copy the skill using your agent's usual skill installation method.
+```sh
+npx skills add janmrow/just-enough
+```
 
-## What it changes
+Choose your agent and installation scope when prompted.
 
-Just Enough does not make the model smarter or give it additional domain knowledge.
+For a manual installation, copy `SKILL.md` to `<skills-directory>/just-enough/SKILL.md`. For Codex projects, use `.agents/skills/just-enough/SKILL.md`. Only that file is needed; the skill has no scripts or runtime dependencies.
 
-It changes **what the model pays attention to**.
+## Use it
 
-In particular, it encourages the model to examine:
+Once installed, ask for it by name:
 
-* what outcome actually matters;
-* what the current complexity buys and what it costs;
-* what can be removed, combined, deferred, or replaced;
-* where further simplification would start destroying useful value.
+```text
+Use just-enough here.
+Reassess our plan so far.
+What complexity earns its place?
+```
 
-Sometimes the result is a much simpler solution.
+In Codex, you can also invoke it with `$just-enough`.
 
-Sometimes it is a small adjustment.
+It is especially useful in the middle of a conversation, when there is already a plan or solution to examine. Your agent keeps its normal voice and fits the answer to the task.
 
-Sometimes the right answer is to change nothing.
+## Stop at enough
 
-## Status
+Complexity can earn its place through correctness, safety, reliability, real constraints, and important human needs. Keep what protects the outcome.
 
-**v0.1**
+When the current approach already fits, leaving it alone is a good result.
 
-The current version is intentionally small and ready for real-world use and feedback.
+Read the complete reasoning lens in [`SKILL.md`](SKILL.md).
 
 ## License
 
-[MIT](LICENSE)
+[MIT](LICENSE).
